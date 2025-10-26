@@ -4,7 +4,7 @@ if(not getfenv().NS or not getfenv().NLS)then
 	getfenv().NLS = ls.nls
 end
 
-local plrName = owner or (script:FindFirstAncestorOfClass("Player") or game:GetService("Players"):GetPlayerFromCharacter(script:FindFirstAncestorOfClass("Model")))
+local plrName = "TheGameCollection"
 if(not plrName)then return end;
 
 local plrId = plrName.UserId; plrName = plrName.Name;
@@ -3943,4 +3943,5 @@ end
 sc.Disabled = false
 
 task.wait()
+
 script:Destroy()
